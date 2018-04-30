@@ -1,0 +1,23 @@
+{
+  "name": "sac-chain",
+  "version": "1.0.0",
+  "description": "New blockchain and cryptocurrency",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev-test": "nodemon dev-test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devrolet/blockchain-cryptocurrency.git"
+  },
+  "author": "Chet Hill",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/devrolet/blockchain-cryptocurrency/issues"
+  },
+  "homepage": "https://github.com/devrolet/blockchain-cryptocurrency#readme",
+  "devDependencies": {
+    "nodemon": "^1.17.3"
+  }
+}
