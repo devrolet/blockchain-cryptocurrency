@@ -17,7 +17,7 @@ const p2pServer = new P2pServer(bc, tp);
 const miner = new Miner(bc, tp, wallet, p2pServer);
 
 app.use(bodyParser.json());
-app.use(express.static(path.join(__dirname, 'client')));
+app.use(express.static(path.join(__dirname, 'client/src')));
 
 app.get('/blocks', (req, res) => {
     res.json(bc.chain);
@@ -54,7 +54,7 @@ app.get('/public-key', (req, res) => {
 });
 
 app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, 'client/index.html'));
+    res.sendFile(path.join(__dirname, 'client/src/index.html'));
 })
 
 app.listen(HTTP_PORT, () => console.log(`Listening on port ${HTTP_PORT}`));
